@@ -1,7 +1,19 @@
 {
-    "spells": [
-        { "id": 1, "name": "Accio", "effect": "Summons objects" },
-        { "id": 2, "name": "Alohomora", "effect": "Unlocks doors and windows" },
-        { "id": 3, "name": "Expelliarmus", "effect": "Disarms opponent" }
-    ]
+  "spells": [
+    {
+      "id": "1",
+      "name": "Accio",
+      "effect": "Summons objects"
+    },
+    {
+      "id": "2",
+      "name": "Alohomora",
+      "effect": "Unlocks doors and windows"
+    },
+    {
+      "id": "3",
+      "name": "Expelliarmus",
+      "effect": "Disarms opponent"
+    }
+  ]
 }
