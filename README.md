@@ -1,11 +1,28 @@
 # hello-http
 
 This is a repository I created to help my sister studying JS, more specifically managing HTTP API requests using JS.  
-The content here is very simple and focused on helping people to learn, not to share real world production standards.
+The content here is very simple and focused on helping people to learn.
 
 ### Exercises
 
-TBD
+1. TBD
+
+### Spell API
+
+To do the exercices you'll need to up our own API, to do that, type...
+
+```bash
+# URL: http://localhost:3000
+npx json-server --watch api.json --port 3000
+```
+
+| Method | Endpoint       | Description               | Body Example                     |
+|--------|----------------|---------------------------|----------------------------------|
+| GET    | `/spells`      | List all spells           | –                                |
+| GET    | `/spells/:id`  | Get a specific spell       | –                                |
+| POST   | `/spells`      | Add a spell               | `{ id, name, effect }`           |
+| PUT    | `/spells/:id`  | Update spell effect       | `{ effect }`                     |
+| DELETE | `/spells/:id`  | Delete a spell            | –                                |
 
 ### Useful Links
 
