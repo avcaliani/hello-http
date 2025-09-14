@@ -1,24 +1,34 @@
 // -----------------------
 //  exercise-01.js
 // ------------------
-// In this file you will find a suggested structure for your code.
-// You can modify it as you want, as long as you reach the expected result. 
 
 async function getAllSpells() {
-    // Add your code here...
-    // If you need to add parameters in the function signature, 
-    // feel free to do so.
-    return [];
+    const response = await fetch("http://localhost:3000/spells");
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const spells = await response.json();
+    return spells;
 }
 
 function filterSpells(spells) {
     const filteredSpells = [];
-    // Add your code here...
+    for (const spell of spells) {
+        const numberOfAs = spell.name.toLowerCase().split("a").length - 1;
+        if (numberOfAs > 1) {
+            filteredSpells.push(spell);
+        }
+    }
     return filteredSpells;
 }
 
 function printSpells(spells) {
-    // Add your code here...
+    console.log("-+-+-+-+-+-+-+-+-+-");
+    console.log(" List of Spells ✨");
+    console.log("-+-+-+-+-+-+-+-+-+-");
+    for (const spell of spells) {
+        console.log(` → ${spell.name}`);
+    }
 }
 
 // -----------------------
