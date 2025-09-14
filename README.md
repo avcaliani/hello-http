@@ -1,5 +1,3 @@
-
-
 # hello-http
 
 This is a repository I created to help my sister studying JS, more specifically managing HTTP API requests using JS.  
@@ -7,17 +5,18 @@ The content here is very simple and focused on helping people to learn.
 
 ### Exercises
 
-1. TBD
+They are all described in ["exercises"](./exercises/readme.md) folder.
 
-<img src="https://cdn-icons-png.flaticon.com/512/4456/4456616.png" align="right" height="80px"/>
-
-### Spell API
+### Spell API 🧙
 
 To do the exercices you'll need to up our own API, to do that, type...
 
 ```bash
-# URL: http://localhost:3000
-npx json-server --watch api.json --port 3000
+# Simple as that!
+make
+
+# Want to reset the database and start fresh?
+make reset-databse
 ```
 
 | Method | Endpoint       | Description               | Body Example                     |
@@ -39,6 +38,3 @@ I do encorage you to study deeper the topics you need, believe me, there's much 
 - ByteByteGo → [What Is REST API?](https://www.youtube.com/watch?v=-mN3VyJuCjM)
 - SoftwareStack-QC → [What is Postman?](https://youtube.com/shorts/khYbWDJpLgA?si=eiOo14K83-LWzeai)
 - rocketseat → [NodeJS history in 1 minute](https://youtube.com/shorts/AlCAhpyFcF8?si=WXuUBSBI9U79o4Rw)
-
-> About the amazing Spell API logo...  
-> [Blessing icons created by Darius Dan - Flaticon](https://www.flaticon.com/free-icons/blessing), go check it out!

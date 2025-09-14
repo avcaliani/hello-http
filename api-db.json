@@ -1,0 +1,49 @@
+{
+  "spells": [
+    {
+      "id": "1",
+      "name": "acciooooo",
+      "effect": "Summons objects"
+    },
+    {
+      "id": "2",
+      "name": "Alohomora",
+      "effect": "Unlocks doors and windows"
+    },
+    {
+      "id": "3",
+      "name": "Expelliarmus",
+      "effect": "Disarms opponent"
+    },
+  {
+      "id": "4",
+      "name": "Rictusempra",
+      "effect": "Tickling charm"
+    },
+    {
+      "id": "5",
+      "name": "Nox",
+      "effect": "Extinguishes wand light"
+    },
+    {
+      "id": "6",
+      "name": "Wingardium Leviosa",
+      "effect": "Levitates objects"
+    },
+    {
+      "id": "7",
+      "name": "Petrificus Totalus",
+      "effect": "Full body-bind"
+    },
+    {
+      "id": "8",
+      "name": "Stupefy",
+      "effect": "Stuns target"
+    },
+    {
+      "id": "1000",
+      "name": "Dev Test",
+      "effect": "This is not a real spell, just for testing purposes :-)"
+    }
+  ]
+}

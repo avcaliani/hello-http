@@ -52,7 +52,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"4\", \n    \"name\": \"Lumos\", \n    \"effect\": \"Creates light from wand tip\" \n}",
+					"raw": "{\n    \"id\": \"9\", \n    \"name\": \"Lumos\", \n    \"effect\": \"Creates light from wand tip\" \n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -88,7 +88,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/spells/4",
+					"raw": "http://localhost:3000/spells/9",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -96,7 +96,7 @@
 					"port": "3000",
 					"path": [
 						"spells",
-						"4"
+						"9"
 					]
 				}
 			},
@@ -117,7 +117,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/spells/4",
+					"raw": "http://localhost:3000/spells/9",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -125,7 +125,7 @@
 					"port": "3000",
 					"path": [
 						"spells",
-						"4"
+						"9"
 					]
 				}
 			},
