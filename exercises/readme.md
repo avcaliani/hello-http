@@ -8,6 +8,16 @@ Using the `/spells` endpoint, create a script that prints all spells whose names
 
 ➡️ [`exercise-01.js`](./exercise-01.js)
 
+Solution
+
+```text
+-+-+-+-+-+-+-+-+-+-
+ List of Spells ✨
+-+-+-+-+-+-+-+-+-+-
+ → Alohomora
+ → Wingardium Leviosa
+```
+
 ---
 
 ### 02. What does these spells do?
@@ -16,6 +26,13 @@ Using the `/spells/:id` endpoint, create a script that prints the effects of the
 If the API returns an error, clearly display the error message.
 
 ➡️ [`exercise-02.js`](./exercise-02.js)
+
+Solution
+
+```text
+✨ The spell "Nox" effect is to extinguishes wand light.
+‼️ HTTP error! Status: 404 | Spell 17 not found!
+```
 
 ---
 
@@ -27,6 +44,14 @@ Using the `/spells/` endpoint, create a script that adds the following new spell
 - **Obliviate** → *Erases memories*  
 
 ➡️ [`exercise-03.js`](./exercise-03.js)
+
+Solution
+
+```text
+No output is expected here, but!
+To check if it worked, run the previous exercise-02.js file ;)
+Shomething should be different now... 👀
+```
 
 ---
 
