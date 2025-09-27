@@ -5,7 +5,7 @@ The content here is very simple and focused on helping people to learn.
 
 ### Exercises
 
-They are all described in ["exercises"](./exercises/readme.md) folder.
+They are all described in ["exercises"](./exercises/exercises.md) folder.
 
 ### Spell API 🧙
 
