@@ -35,5 +35,7 @@ function printSpells(spells) {
 // Running the code 🚀
 // -----------------------
 const allSpells = await getAllSpells();
+console.log(`There are ${allSpells.length} spells in total.`);
 const filteredSpells = filterSpells(allSpells);
+console.log(`Only ${filteredSpells.length} spells have two or more letter 'A' in the name.`);
 printSpells(filteredSpells);
