@@ -17,8 +17,8 @@ function filterSpells(spells) {
     const filteredSpells = [];
     
     for (var i=0; i <= spells.length - 1; i++){
-        const spellName = spells[i].name.toLowerCase()
-        if (spellName.split("a").length >= 3){
+        const spellName = spells[i].name
+        if (spellName.toLowerCase().split("a").length >= 3){
             
             filteredSpells.push(spellName)
         }
