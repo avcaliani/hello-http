@@ -97,5 +97,15 @@ If the API returns an error, clearly display the error message.
 Solution
 
 ```text
-...
+There are 306 spells in total.
+Only 71 spells have two or more letter 'A' in the name.
+-+-+-+-+-+-+-+-+-+-
+ List of Spells ✨
+-+-+-+-+-+-+-+-+-+-
+ → Water-Making Spell
+ → Alarte Ascendare
+ → Animagus Spell
+ → Anteoculatia
+ → Anti-Cheating Spell
+ ...
 ```
