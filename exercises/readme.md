@@ -84,3 +84,18 @@ Solution
 No output is expected here, but!
 You can use Postman to check if it worked \o/
 ```
+
+---
+
+### 06. Let's use a public API \o/
+
+Let's do the exact same exercise 01, but now using the  `/Spells` endpoint from [Wizard World API](https://github.com/MossPiglets/WizardWorldAPI).
+If the API returns an error, clearly display the error message.
+
+➡️ [`exercise-06.js`](./exercise-06.js)
+
+Solution
+
+```text
+...
+```
