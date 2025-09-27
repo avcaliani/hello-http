@@ -77,3 +77,10 @@ Using the `/spells/:id` endpoint, create a script that deletes the test spells c
 If the API returns an error, clearly display the error message.
 
 ➡️ [`exercise-05.js`](./exercise-05.js)
+
+Solution
+
+```text
+No output is expected here, but!
+You can use Postman to check if it worked \o/
+```
