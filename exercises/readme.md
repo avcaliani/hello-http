@@ -62,6 +62,13 @@ It is currently stored as `acciooooo`, but it should be `Accio`.
 
 ➡️ [`exercise-04.js`](./exercise-04.js)
 
+Solution
+
+```text
+No output is expected here, but!
+You can use Postman to check if it worked \o/
+```
+
 ---
 
 ### 05. Delete old test spells
