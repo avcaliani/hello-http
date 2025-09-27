@@ -16,7 +16,7 @@ To do the exercices you'll need to up our own API, to do that, type...
 make
 
 # Want to reset the database and start fresh?
-make reset-databse
+make reset-database
 ```
 
 | Method | Endpoint       | Description               | Body Example                     |

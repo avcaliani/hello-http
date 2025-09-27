@@ -9,7 +9,7 @@ create-database:
 	mkdir -p $(DB_PATH)
 	cp $(DB_FILE) $(DB_PATH)
 
-reset-databse:
+reset-database:
 	rm -rf $(DB_PATH)
 
 start-api: create-database
@@ -18,4 +18,4 @@ start-api: create-database
 	@echo "--------------------------------"
 	npx json-server "$(DB_PATH)/$(DB_FILE)" --port $(API_PORT)
 
-.PHONY: create-database reset-databse start-api
+.PHONY: create-database reset-database start-api
