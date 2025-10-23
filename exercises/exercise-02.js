@@ -5,11 +5,16 @@
 // You can modify it as you want, as long as you reach the expected result. 
 
 async function getSpell(spellId) {
-    // Add your code here...
-    // If you need to add parameters in the function signature, 
-    // feel free to do so.
-    return {};
+    const response = await fetch("http://localhost:3000/spells/" + spellId);
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const spells = await response.json();
+    return spells;
 }
+
+const allSpells = await getSpell("5");
+console.log(allSpells)
 
 function printSpellEffect(spells) {
     // Add your code here...
