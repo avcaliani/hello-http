@@ -7,18 +7,19 @@
 async function getSpell(spellId) {
     const response = await fetch("http://localhost:3000/spells/" + spellId);
     if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
+        throw new Error(`‼️ HTTP error! Status: ${response.status} | Spell ${spellId} not found!`);
     }
     const spells = await response.json();
     return spells;
 }
 
-const allSpells = await getSpell("5");
-console.log(allSpells)
 
 function printSpellEffect(spells) {
-    // Add your code here...
+    if (spells) {
+        console.log("✨ The spell", spells.name, "effect is to", spells.effect.toLowerCase())
+    }
 }
+
 
 // -----------------------
 // Running the code 🚀
