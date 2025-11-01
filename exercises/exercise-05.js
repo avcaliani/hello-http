@@ -17,9 +17,21 @@ async function getAllSpells() {
 
 // Deletar um spell por ID
 async function deleteSpell(spellId) {
-    // Add your code here...
-    // If you need to add parameters in the function signature, 
-    // feel free to do so.
+    const response = await fetch (`http://localhost:3000/spells/${spellId}`,{
+        method: 'DELETE',
+        headers:{
+            'content-type': 'application/json',
+        },
+        body: JSON.stringify(spellId)
+    }
+);
+
+    if (!response.ok) {
+                throw new Error(`‼️ HTTP error! Status: ${response.status} | Spell ${spellId} could not be found or deleted!`);
+            }
+    const spellDelete = await response.json();
+    console.log(spellDelete)
+    return spellDelete;
 }
 
 // -----------------------
