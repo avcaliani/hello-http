@@ -23,6 +23,28 @@ async function updateSpellName(spellId, updateParameter, newValue) {
 
 }
 
+// Atualizar spell geral
+async function updateSpell(spellId, newName){
+    const response = await fetch(`http://localhost:3000/spells/${spellId}`,{
+        method: 'PUT',
+        headers: {
+            'content-type': 'application/json',
+        },
+        body: JSON.stringify({
+            id: spellId,
+            name: newName
+        }
+        )
+    }
+    );
+    
+    if (!response.ok) {
+            throw new Error(`‼️ HTTP error! Status: ${response.status} | Spell ${spellId} not updated!`);
+        }
+    const spellUpdate = await response.json();
+    console.log(spellUpdate)
+    return spellUpdate;
+
 }
 
 
@@ -32,3 +54,4 @@ async function updateSpellName(spellId, updateParameter, newValue) {
 // -----------------------
 await updateSpellName("1", "name", "Accio");
 
+await updateSpell("1", "Accio");
