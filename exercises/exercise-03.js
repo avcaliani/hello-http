@@ -6,10 +6,10 @@
 
 // Dúvidas ❓
 // 1. Pra testar se estava funcionando eu não preenchi o segundo spell, e no console apareceu:
-// New spell added { id: '9ffe' }
+// New spell added { id: '9ffe' } -> é como base 
 
 async function createSpell(spell) {
-    const response = await fetch ("http://localhost:3000/spells/",{
+    const response = await fetch("http://localhost:3000/spells/",{
         method: 'POST',
         headers: {
             'content-type': 'application/json',
@@ -26,10 +26,21 @@ async function createSpell(spell) {
     return newSpell;
 }
 
+// Checar se o spell já existe
+async function checkExistingSpell(spellId) {
+    const response = await fetch(`http://localhost:3000/spells/${spellId}`);
+    if (response.ok) {
+        throw new Error(`An spell with ID ${spellId} aready exists! Status: ${response.status}`);
+    }
+    console.log(`There is no spell with ID ${spellId} ✔`)
+}
+
+
 // -----------------------
 // Running the code 🚀
 // -----------------------
 
+await checkExistingSpell("17")
 await createSpell({ 
     id: "17", 
     name: "Rictusempra", 
@@ -37,11 +48,13 @@ await createSpell({
 });
 
 // Obliviate → Erases memories
-await createSpell({
+const obliviate = {
     id: "18", 
     name: "Obliviate", 
     effect: "Erases memories"
-});
+}
+await checkExistingSpell(obliviate.id)
+await createSpell(obliviate);
 
 
 // To check if it worked, run the previous exercise-02.js file ;)
