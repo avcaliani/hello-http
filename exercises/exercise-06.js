@@ -5,25 +5,34 @@
 // You can modify it as you want, as long as you reach the expected result. 
 
 async function getAllSpells() {
-    // Add your code here...
-    // If you need to add parameters in the function signature, 
-    // feel free to do so.
-    return [];
+    const response = await fetch("https://wizard-world-api.herokuapp.com/Spells");
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const spells = await response.json();
+    return spells;
 }
 
 function filterSpells(spells) {
     const filteredSpells = [];
-    // Add your code here...
+    
+    for (var i=0; i <= spells.length - 1; i++){
+        const spellName = spells[i].name
+        if (spellName.toLowerCase().split("a").length >= 3){
+            
+            filteredSpells.push(spellName)
+        }
+    }
     return filteredSpells;
-}
-
-function printSpells(spells) {
-    // Add your code here...
 }
 
 // -----------------------
 // Running the code 🚀
 // -----------------------
+
 const allSpells = await getAllSpells();
+console.log(`Spells Found: ${allSpells.length}`)
+console.log(allSpells)
+
 const filteredSpells = filterSpells(allSpells);
-printSpells(filteredSpells);
+console.log(filteredSpells);
