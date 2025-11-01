@@ -4,8 +4,13 @@
 // In this file you will find a suggested structure for your code.
 // You can modify it as you want, as long as you reach the expected result. 
 
+// Dúvidas❓
+// 1. Tentei usar o [get] no lugar do fetch, mas ele retornou um erro
+// 2. Tentei usar ${spellId} dentro da URL da API e não fucionou
+
 async function getSpell(spellId) {
-    const response = await fetch("http://localhost:3000/spells/" + spellId);
+    // const response = await fetch("http://localhost:3000/spells/" + spellId);
+    const response = await fetch(`http://localhost:3000/spells/${spellId}`);
     if (!response.ok) {
         throw new Error(`‼️ HTTP error! Status: ${response.status} | Spell ${spellId} not found!`);
     }
