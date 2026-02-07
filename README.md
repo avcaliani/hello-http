@@ -1,4 +1,4 @@
-# hello-http
+# http-for-beginners
 
 This is a repository I created to help my sister studying JS, more specifically managing HTTP API requests using JS.  
 The content here is very simple and focused on helping people to learn.
